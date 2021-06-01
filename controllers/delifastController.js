@@ -28,9 +28,9 @@ receivePayment = async function (req, res) {
 }
 
 sendPayment = async function (req, res) {
-    let amount = req.query.amount;
-    let transactionId = req.query.transactionId;
-    let supplierId = req.query.supplierId;
+    let amount = req.body.amount;
+    let transactionId = req.body.transactionId;
+    let supplierId = req.body.supplierId;
     console.log("Received amount:" + amount);
     console.log("Received transaction ID:" + transactionId);
     console.log("Received supplier ID:" + supplierId);
@@ -85,16 +85,10 @@ createUser = async function (req, res) {
     });
 }
 
-getLandingPage = function (req, res, next) {
-    res.render('landingPage', {title: 'LandingPage'});
-}
-
-
 module.exports = {
     receivePayment,
     sendPayment,
     refundPayment,
     getClientToken,
-    createUser,
-    getLandingPage
+    createUser
 }
