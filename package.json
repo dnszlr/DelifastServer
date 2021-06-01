@@ -1,0 +1,22 @@
+{
+  "name": "delifastserver",
+  "version": "1.0.0",
+  "description": "Server for delifast Android Application for mobile computing sose21",
+  "license": "ISC",
+  "author": "Gianni Natalello, Dennis Zeller, Mohammed Kalash",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "braintree": "^3.4.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "^1.10.0",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "http-errors": "^1.8.0",
+    "nodemon": "^2.0.7"
+  }
+}
